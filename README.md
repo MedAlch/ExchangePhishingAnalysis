@@ -11,23 +11,30 @@ ExchangePhishingAnalysis.ps1 requires and administrative account on your Exchang
 ![image](https://user-images.githubusercontent.com/39335291/137759835-f34e7de3-d90e-415d-8986-7ded1ff73a79.png)
 
 ## Usage :
-### Get a view of what is currently blacklisted 
- .\ExchangePhishingAnalysis.ps1 -Action Review
+**Get a view of what is currently blacklisted** 
+
+`.\ExchangePhishingAnalysis.ps1 -Action Review`
  
-### Analyze all mails sent by a specific sender (within last 10 days at most)
- .\ExchangePhishingAnalysis.ps1 -Action Analyze -Target test@email.com -StartDate MM/dd/yyyy -EndDate MM/dd/yyyy
+**Analyze all mails sent by a specific sender (within last 10 days at most)**
+
+`.\ExchangePhishingAnalysis.ps1 -Action Analyze -Target test@email.com -StartDate MM/dd/yyyy -EndDate MM/dd/yyyy`
  
-### Analyze all mails sent by the whole domain (within last 10 days at most)
- .\ExchangePhishingAnalysis.ps1 -Action Analyze -Target \*@email.com -StartDate MM/dd/yyyy -EndDate MM/dd/yyyy
+**Analyze all mails sent by the whole domain (within last 10 days at most)**
+
+`.\ExchangePhishingAnalysis.ps1 -Action Analyze -Target \*@email.com -StartDate MM/dd/yyyy -EndDate MM/dd/yyyy`
  
- ### Blacklist a specific sender 
- .\ExchangePhishingAnalysis.ps1 -Action BlockSender -Target test@email.com
+**Blacklist a specific sender**
+
+`.\ExchangePhishingAnalysis.ps1 -Action BlockSender -Target test@email.com`
  
- ### Blacklist a whole domain
- .\ExchangePhishingAnalysis.ps1 -Action BlockDomain -Target \*@email.com
+**Blacklist a whole domain**
+
+`.\ExchangePhishingAnalysis.ps1 -Action BlockDomain -Target \*@email.com`
  
-  ### Remove from blacklist a specific sender 
- .\ExchangePhishingAnalysis.ps1 -Action AllowSender -Target test@email.com
+**Remove from blacklist a specific sender**
+
+`.\ExchangePhishingAnalysis.ps1 -Action AllowSender -Target test@email.com`
  
-  ### Remove from blacklist a whole domain
- .\ExchangePhishingAnalysis.ps1 -Action AllowDomaun -Target \*@email.com
+**Remove from blacklist a whole domain**
+
+`.\ExchangePhishingAnalysis.ps1 -Action AllowDomaun -Target \*@email.com`
