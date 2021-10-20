@@ -36,7 +36,7 @@ if ($Action -eq "Analyze") {
     #SetDate
 
     Write-Host "###############################################"
-    Write-Host "#    Fetching information for exact address   #"
+    Write-Host "#      Fetching information for target        #"
     Write-Host "###############################################"
     Get-MessageTrace -SenderAddress $Target -StartDate $StartDate -EndDate $EndDate
 
