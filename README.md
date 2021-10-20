@@ -21,7 +21,7 @@ ExchangePhishingAnalysis.ps1 requires and administrative account on your Exchang
  
 **Analyze all mails sent by the whole domain (within last 10 days at most)**
 
-`.\ExchangePhishingAnalysis.ps1 -Action Analyze -Target \*@email.com -StartDate MM/dd/yyyy -EndDate MM/dd/yyyy`
+`.\ExchangePhishingAnalysis.ps1 -Action Analyze -Target *@email.com -StartDate MM/dd/yyyy -EndDate MM/dd/yyyy`
  
 **Blacklist a specific sender**
 
@@ -29,7 +29,7 @@ ExchangePhishingAnalysis.ps1 requires and administrative account on your Exchang
  
 **Blacklist a whole domain**
 
-`.\ExchangePhishingAnalysis.ps1 -Action BlockDomain -Target \*@email.com`
+`.\ExchangePhishingAnalysis.ps1 -Action BlockDomain -Target *@email.com`
  
 **Remove from blacklist a specific sender**
 
@@ -37,4 +37,4 @@ ExchangePhishingAnalysis.ps1 requires and administrative account on your Exchang
  
 **Remove from blacklist a whole domain**
 
-`.\ExchangePhishingAnalysis.ps1 -Action AllowDomaun -Target \*@email.com`
+`.\ExchangePhishingAnalysis.ps1 -Action AllowDomaun -Target *@email.com`
